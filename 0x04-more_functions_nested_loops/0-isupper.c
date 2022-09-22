@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *   _isupper - If is uppercase return 1, if not return 0
+ * _isupper - If is uppercase return 1, if not return 0
 
  * @c: this is the entry
  
