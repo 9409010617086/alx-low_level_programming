@@ -1,4 +1,4 @@
-#include "main.h"
+#include  "main.h"
 #include <stdio.h>
 
 /**
@@ -8,7 +8,6 @@
  * @n: number of bytes of str to concatenate
  * Return: a pointer to the resulting string dest
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
 
@@ -22,7 +21,6 @@ char *_strncat(char *dest, char *src, int n)
 
 		i++;
 
-
 	while (src[j] != '\0' && j < n)
 
 	{
@@ -35,10 +33,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	}
 
-
 	dest[i] = '\0';
-
-
 
 	return (dest);
 
