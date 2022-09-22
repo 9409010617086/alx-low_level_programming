@@ -1,11 +1,16 @@
-#include “main.h”
-
 #include <stdio.h>
 
 /**
- * Main – causes an infinite loop
- * Return: 0
- */
+ *
+ *
+ *
+ * *Main – causes an infinite loop
+ *
+ * *
+ *
+ * *Return: 0
+ *
+ * */
 
 
 
@@ -17,15 +22,26 @@ Int main(void)
 
 	Printf(“infinite loop incoming :(\n”);
 
-			i = 0;
+			I = 0;
 
-			/* while (i < 10) */
 
-			/* { */
 
-			/* putchat(i); */
+			/* 
+			 *
+			 * while (I < 10) */
 
-			/* } */
+			 { 
 
-			Printf(“infinite loop avoided! \\o/\n”);
+			 Infinite loop – No increase of variable
+
+			 *putchat(i); 
+
+			 } 
+
+			 */
+
+			 Printf(“infinite loop avoided!  \\o/\n”);
+
+			 Return (0);
+
 }
