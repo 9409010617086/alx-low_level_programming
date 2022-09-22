@@ -1,31 +1,26 @@
 #include "holberton.h"
-
-#include <stdio.h>
-
-int main(void)
+char *_strcat(char *dest, char *src)
 
 {
 
-	    char s1[98] = "Hello ";
-
-	        char s2[] = "World!\n";
-
-		    char *p;
+		int i, j;
 
 
 
-		        printf("%s\n", s1);
+			for (i = 0; dest[i] != '\0'; i++)
 
-			    printf("%s", s2);
+						;
 
-			        p = _strcat(s1, s2);
+				for (j = 0; src[j] != '\0'; j++)
 
-				    printf("%s", s1);
+						{
 
-				        printf("%s", s2);
+									dest[i] = src[j];
 
-					    printf("%s", p);
+											i++;
 
-					        return (0);
+												}
+
+					return (dest);
 
 }
