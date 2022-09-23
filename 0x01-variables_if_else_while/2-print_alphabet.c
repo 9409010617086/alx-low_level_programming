@@ -1,26 +1,18 @@
 #include <stdio.h>
-#include "main.h"
-
 /**
- * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
- * followed by a new line
- */
-void print_alphabet_x10(void)
+* main - print if the number is postive, zero, or negative
+*
+* Description: using the main function
+* this program prints "Programming is positive, zero, or negative
+* Return: 0
+*/
+int main(void)
 {
-	char ch;
-	int i;
+char c;
+for (c = 'a' ; c <= 'z' ; c++)
 
-	i = 0;
+	putchar(c);
 
-	while (i < 10)
-	{
-		ch = 'a';
-		while (ch <= 'z')
-		{
-			_putchar(ch);
-			ch++;
-		}
-		_putchar('\n');
-		i++;
-	}
+putchar('\n');
+return (0);
 }
