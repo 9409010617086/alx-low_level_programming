@@ -1,1 +1,1 @@
-Write a function that changes all lowercase letters of a string to uppercase..
+0x06. C - More pointers, arrays and strings
