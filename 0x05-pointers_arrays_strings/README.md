@@ -1,1 +1,1 @@
-“write any description you want here”
+0x05. C - Pointers, arrays and strings
