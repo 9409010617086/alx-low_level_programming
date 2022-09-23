@@ -1,16 +1,16 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * _puts - prints a string to stdout
- * @str: pointer to the string to print
+ * _islower - function to check for lowercase character
+ * @c:  is the int that will use for the argument of the function
+ * Return: 0
  */
-void _puts(char *str)
+int _islower(int c)
 {
-	int i;
-
-	for (i = 0; str[i] != '\0'; i++)
+	if (c >= 'a' && c <= 'z')
 	{
-		_putchar(str[i]);
+		return (1);
 	}
-	_putchar('\n');
+	else
+		return (0);
 }
