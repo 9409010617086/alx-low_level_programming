@@ -29,5 +29,5 @@ putchar(str[i]);
 putchar(str[n + 1]);
 		}
 	}
-	_putchar('\n');
+putchar('\n');
 }
