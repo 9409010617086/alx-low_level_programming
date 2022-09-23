@@ -19,16 +19,16 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		;
 /* equal the longitude of len to buffer bigger */
 	if (len1 >= len2)
-		strg = c1;
+		strg = n1;
 	if (size_r <= strg)
-		return (0);
-	r [bg + 1]
+ 	return (0);
+	r [bg + 1];
 	len1 = len1 - 1;
 	len2 = len2 - 1;
 /* defining the longitude in 2 digits to store it in buffer */
 	while (len1 >= 0 || len2 >= 0)
 	{
-		d1 = d2 = 0;
+		d3 = d2 = 0;
 		if (len1 >= 0)
 			d1 = n1[len1--] - '0';
 		if (len2 >= 0)
@@ -41,9 +41,9 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			s3 = 1;
 			s3 = s3 - 10;
 		}
-		else
-			s3 = 0;
-r[]
+	else
+	s3 = 0;
+	r[]
 	}
 		return (0);
 }
