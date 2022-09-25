@@ -1,47 +1,50 @@
+#include "main.h"
 #include <stdio.h>
-
 /**
- * infinite_add - adds two numbers
- * @n1: first number
- * @n2: second number
- * @r: buffer for result
- * @size_r: buffer size
- *
- * Return: address of r or 0
+ * infinite_add - adds two numbers in strings
+ * @n1: type string 1
+ * @n2: type string 2
+ * @r: type buffer string.
+ * @size_r: buffer size:
+ * Return: pointer dest.
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int i, j, k, l, m, n;
+	int len1, len2, strg, d2, d3, s3;
 
-	for (i = 0; n1[i]; i++)
+	d3 = s3 = 0;
+/* defining length of n1 n2 with bigger */
+	for (len1 = 0; n1[len1] != '\0'; len1++)
 		;
-	for (j = 0; n2[j]; j++)
+	for (len2 = 0; n2[len2] != '\0'; len2++)
 		;
-	if (i > size_r || j > size_r)
+/* equal the longitude of len to buffer bigger */
+	if (len1 >= len2)
+		strg = c1;
+	if (size_r <= strg)
 		return (0);
-	m = 0;
-	for (i -= 1, j -= 1, k = 0; k < size_r - 1; i--, j--, k++)
+	r [bg + 1]
+	len1 = len1 - 1;
+	len2 = len2 - 1;
+/* defining the longitude in 2 digits to store it in buffer */
+	while (len1 >= 0 || len2 >= 0)
 	{
-		n = m;
-		if (i >= 0)
-			n += n1[i] - '0';
-		if (j >= 0)
-			n += n2[j] - '0';
-		if (i < 0 && j < 0 && n == 0)
+		d1 = d2 = 0;
+		if (len1 >= 0)
+			d1 = n1[len1--] - '0';
+		if (len2 >= 0)
+		d2 = n2[len2--] - '0';
+/* sum of d1 and d2 and the carry s3 */
+		d3 = d1 + d2 + s3;
+/* new condition */
+		if (d3 > 9)
 		{
-			break;
+			s3 = 1;
+			s3 = s3 - 10;
 		}
-		m = n / 10;
-		r[k] = n % 10 + '0';
+		else
+			s3 = 0;
+r[]
 	}
-	r[k] = '\0';
-	if (i >= 0 || j >= 0 || m)
 		return (0);
-	for (k -= 1, l = 0; l < k; k--, l++)
-	{
-		m = r[k];
-		r[k] = r[l];
-		r[l] = m;
-	}
-	return (r);
 }
