@@ -1,5 +1,4 @@
 #include "main.h"
-
 int bandersnatch(char *s1, char *s2);
 char *move(char *s2);
 
@@ -43,7 +42,6 @@ int wildcmp(char *s1, char *s2)
 	 */
 	if (*s1 == '\0' || *s2 == '\0')
 		return (0);
-
 	/**
 	 * if the char in s2 is a *
 	 * finds the address of the first char after the *
@@ -65,7 +63,6 @@ int wildcmp(char *s1, char *s2)
 	}
 	return (0);
 }
-
 /**
  * bandersnatch - checks recursively for all the paths when the
  * characters are equal
@@ -87,7 +84,6 @@ int bandersnatch(char *s1, char *s2)
 		return (wildcmp(s1, s2));
 	return (bandersnatch(s1 + 1, s2));
 }
-
 /**
  * *move - moves the current char past the *
  * @s2: string to iterate over
