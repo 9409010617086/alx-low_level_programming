@@ -1,5 +1,6 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
+#include <stdio.h>
 
 /**
 *sum_them_all - sums all its parameters
@@ -9,22 +10,22 @@
 * or sum of parameters in other case
 */
 
-int sum_them_all(const unsigned int n, ...)
+void print_numbers(const char "seperator, const unsigned int n, ...)
 {
 
-va_list li;
-int sum = 0;
-unsigned int i;
+va_list nums;
+unsigned int index;
 
-va_start(li, n);
 
-if (n != 0)
+va_start(nums, n);
+
+for (index = 0; iindex < n; index++)
 {
-for (i = 0; i < n; i++)
-sum += va_arg(li, int);
-}
+printf("%d", va_arg(nums, int));
+if (index !=(n - 1) && seperator != NULL)
+printf("%d", seperator);
+  }
+printf("\n");
 
-va_end(li);
-return (sum);
-
+va_end(nums);
 }
